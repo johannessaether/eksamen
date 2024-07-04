@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komponenter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1><a href="index.html">Vår Digitale Verden</a></h1>
+            <ul class="navlist">
+                <li><a href="index.html">Hjem</a></li>
+                <li class="current"><a href="komponenter.html">Komponenter</a></li>
+                <li><a href="tallsystemer.html">Tallsystemer</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <img src="media/hamburger.png" alt="" class="dropbtn">
+            <div class="dropdown-content">
+                <a href="index.html">Hjem</a>
+                <a href="komponenter.html">Komponenter</a>
+                <a href="tallsystemer.html">Tallsystemer</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero hero1">
+            <div class="container">
+                <h1>Komponenter</h1>
+                <h2>Bli kjent med datamaskinens indre organer</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>Oppbygningen av en datamaskin</h1>
+                <p>Datamaskiner fungerer ved å behandle og lagre informasjon ved hjelp av ulike sammenkoblede
+                    komponenter. Når du slår på en datamaskin, starter prosessoren (CPU) og begynner å utføre
+                    instruksjoner fra operativsystemet og programmer. Minne (RAM) gir rask tilgang til data og
+                    instruksjoner som prosessoren trenger umiddelbart. Lagringsenheter som harddisker (HDD) og Solid
+                    State Drives (SSD) holder data permanent, som filer og applikasjoner.
+
+                    Hovedkortet kobler sammen alle disse komponentene, og strømforsyningen (PSU) sørger for at de får
+                    den nødvendige elektriske energien. Grafikkortet (GPU) håndterer visuell informasjon, og viser
+                    bilder og videoer på skjermen. Sammen jobber disse delene for å utføre alt fra enkle oppgaver som å
+                    skrive et dokument til komplekse beregninger og grafikkintensive applikasjoner som spill og
+                    videoredigering.</p>
+                <img src="media/overview.png" alt="" class="fullsize">
+            </div>
+        </section>
+
+        <section class="variation">
+            <div class="container">
+                <h1>Kort oppsummert</h1>
+                <h2>Trykk på boksene for å lese en enkel forklaring</h2>
+                <br>
+                <br>
+            </div>
+            <div class="container flex">
+
+                <article id="a1">
+                    <h2>Prosessor</h2>
+                    <p id="p1">Prosessoren, eller CPU (Central Processing Unit), er hjernen i datamaskinen.
+                        Den utfører alle nødvendige beregninger og kontrollerer andre deler av datamaskinen.
+                        Prosessorens ytelse måles i hertz (frekvens) og kjerner (antall uavhengige beregningsenheter).
+                    </p>
+                </article>
+
+                <article id="a2">
+                    <h2>Minne</h2>
+                    <p id="p2">Minnet i en datamaskin kalles RAM. RAM er midlertidig lagringsplass som datamaskinen
+                        bruker til å lagre data og instruksjoner som trengs øyeblikkelig.
+                        Det gir rask tilgang til data for prosessoren sammenlignet med lagringsenheter som harddisker og
+                        SSD-er.
+                        RAM-typen og mengden påvirker datamaskinens hastighet og evne til å håndtere flere oppgaver
+                        samtidig.</p>
+                </article>
+
+                <article id="a3">
+                    <h2>Lagringsenheter</h2>
+                    <p id="p3">Harddisker (HDD - Hard Disk Drive) og Solid State Drives (SSD) lagrer data permanent,
+                        selv når datamaskinen er avslått.
+                        HDD-er bruker magnetiske plater for å lagre data, mens SSD-er bruker flash-minne, noe som gir
+                        raskere tilgang til data.
+                        Lagringskapasiteten måles i gigabytes (GB) eller terabytes (TB), og valg av type avhenger av
+                        hastighets- og lagringsbehov.</p>
+                </article>
+
+                <div id="upperInfoBox" class="infoBox">
+                    <p id="p"></p>
+                </div>
+
+                <article id="a4">
+                    <h2>Hovedkort</h2>
+                    <p id="p4">Hovedkortet er det sentrale kretskortet som kobler sammen alle de andre komponentene i
+                        datamaskinen.
+                        Det gir kommunikasjon mellom prosessoren, minnet, lagringsenhetene, grafikkortet og andre
+                        enheter via tilkoblinger og porter.
+                        Hovedkortet er avgjørende for stabilitet og ytelse i datamaskinen.</p>
+                </article>
+
+                <article id="a5">
+                    <h2>Strømforsyning</h2>
+                    <p id="p5">Strømforsyningen konverterer elektrisk strøm fra en stikkontakt til riktig spenning og
+                        strømstyrke som trengs av datamaskinens komponenter.
+                        Det leverer strøm til prosessoren, hovedkortet, lagringsenhetene, grafikkortet og andre enheter.
+                    </p>
+                </article>
+
+                <article id="a6">
+                    <h2>Grafikkort</h2>
+                    <p id="p6">Grafikkortet er en spesialisert enhet som behandler og genererer bilder, animasjoner og
+                        videoer på dataskjermer.
+                        Det avlaster prosessoren ved å ta seg av grafikkintensive oppgaver, som spill, videoredigering
+                        og 3D-modellering.
+                        GPU-er har sin egen RAM, kjent som VRAM (Video RAM), som bidrar til rask behandling av grafiske
+                        data.</p>
+                </article>
+
+                <div id="lowerInfoBox" class="infoBox">
+                    <p id="p"></p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>CPU eller GPU?</h1>
+                <p>CPU (Central Processing Unit) og GPU (Graphics Processing Unit) er to essensielle komponenter i en
+                    datamaskin, men de har ulike roller og egenskaper som skiller dem fra hverandre.
+
+                    CPU-en, ofte referert til som datamaskinens hjerne, er designet for å utføre generelle
+                    beregningsoppgaver. Den håndterer instruksjoner fra både operativsystemet og applikasjoner, og
+                    utfører et bredt spekter av oppgaver, fra å kjøre programmer til å behandle data. Moderne CPU-er har
+                    flere kjerner, som to, fire, seks eller flere, noe som gjør dem i stand til å utføre flere oppgaver
+                    samtidig gjennom multitasking. Hastigheten på en CPU måles i gigahertz (GHz), som angir hvor mange
+                    operasjoner den kan utføre per sekund. CPU-er er strukturert med få, men kraftige kjerner, som er
+                    optimalisert for å håndtere enkeltoppgaver med høy hastighet og lav ventetid.
+                    <br>
+                    <br>
+                    På den annen side er GPU-en designet for å behandle grafikk og bilder, og er spesielt effektiv for
+                    oppgaver som involverer parallell behandling av store datamengder, som grafikkrendering og
+                    maskinlæring. GPU-er er spesialisert for å håndtere grafikkintensive oppgaver, som rendering av
+                    3D-grafikk i spill og videoredigering. De har tusenvis av mindre kjerner, som er optimalisert for
+                    parallell prosessering, noe som gjør dem svært effektive for oppgaver som kan deles opp i mange små
+                    deler og behandles samtidig. Selv om GPU-ens hastighet også måles i gigahertz, ligger dens styrke i
+                    evnen til å utføre mange operasjoner parallelt. GPU-er er strukturert for å håndtere mange samtidige
+                    tråder, noe som gjør dem ideelle for grafikk- og videobehandling.
+                    <br>
+                    <br>
+                    I sammendraget fungerer CPU-en som den generelle beregningsenheten i en datamaskin, med få kraftige
+                    kjerner optimalisert for enkel oppgavebehandling, mens GPU-en akselererer grafikk- og
+                    parallellbehandlingsoppgaver med mange små kjerner som jobber samtidig. Begge komponentene er
+                    avgjørende for datamaskinens ytelse, men de er designet for forskjellige typer arbeid. CPU-en tar
+                    seg av generelle beregninger og systemoppgaver, mens GPU-en er optimalisert for grafikk- og
+                    parallellbehandling.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="grid">
+            <div>
+                <h2 id="clicker">Vår Digitale Verden</h2>
+                <p id="counterDisplay"></p>
+            </div>
+            <div>
+                <h3>Kontakt oss</h3>
+                <ul>
+                    <li>johannesat@viken.no</li>
+                    <li>90593917</li>
+                    <li>Gjønnesjordet 30, 1357 Bekkestua</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

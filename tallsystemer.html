@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tallsystemer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1><a href="index.html">Vår Digitale Verden</a></h1>
+            <ul class="navlist">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="komponenter.html">Komponenter</a></li>
+                <li class="current"><a href="tallsystemer.html">Tallsystemer</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <img src="media/hamburger.png" alt="" class="dropbtn">
+            <div class="dropdown-content">
+                <a href="index.html">Hjem</a>
+                <a href="komponenter.html">Komponenter</a>
+                <a href="tallsystemer.html">Tallsystemer</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero hero2">
+            <div class="container">
+                <h1>Tallsystemer</h1>
+                <h2>Forstå datamaskinenes språk: En enkel guide til tallsystemer</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>Binære tall</h1>
+                <p>Binære tall er et tallsystem som kun bruker to sifre: 0 og 1. Dette systemet er grunnlaget for all
+                    databehandling fordi digitale systemer, som datamaskiner, opererer med to tilstander (av/på,
+                    ja/nei).
+
+                    I binære tall er hver posisjon en potens av 2, i stedet for 10 som i det desimale systemet. Det vil
+                    si at det bakerste sifferet har verdi 1, neste har verdi 2, neste 4, neste 8 og så videre. Verdien
+                    dobler seg altså for hvert siffer.</p>
+                <br>
+                <p>For eksempel, binærtallet 1010 kan oversettes til desimaltall slik:</p>
+                <ul>
+                    <li>Den høyeste biten (1) representerer 2^3 = 8</li>
+                    <li>Den neste biten (0) representerer 2^2 = 4</li>
+                    <li>Den neste biten (1) representerer 2^1 = 2</li>
+                    <li>Den laveste biten (0) representerer 2^0 = 1</li>
+                </ul>
+                <p>
+                    Så, 1010 i binært system er lik 8 + 0 + 2 + 0 = 10 i desimalt system. Dette enkle systemet med 0
+                    og 1 gjør det mulig for datamaskiner å utføre komplekse beregninger og prosesser.</p>
+                <br>
+                <aside>
+                    <div>
+                        <h2>Bits og bytes</h2>
+                        <p>Et siffer i et binært tall kalles en bit. Åtte bits blir til sammen en byte. En byte kan ha
+                            en verdi
+                            mellom 0 og 255, som betyr at det finnes 256 ulike kombinasjoner.
+                            Bits og bytes brukes også til å måle datalagring og overføringshastigheter:
+
+                            Kilobyte (KB), 
+                            Megabyte (MB), 
+                            Gigabyte (GB) og 
+                            Terabyte (TB).
+                            Bits og bytes er veldig
+                            sentrale i
+                            lagring av data som for eksempel bilder. </p>
+                    </div>
+                    <img src="media/binary.png" alt="">
+                </aside>
+            </div>
+        </section>
+
+        <section class="variation">
+            <div class="container">
+                <h1>Test deg selv!</h1>
+                <h2>Skriv <span id="numToBinary">x</span> som binært tall</h2>
+                <div>
+                    <input type="number" id="bit8">
+                    <input type="number" id="bit7">
+                    <input type="number" id="bit6">
+                    <input type="number" id="bit5">
+                    <input type="number" id="bit4">
+                    <input type="number" id="bit3">
+                    <input type="number" id="bit2">
+                    <input type="number" id="bit1">
+                </div>
+                <br>
+                <button id="checkBin">Sjekk svar</button>
+                <br>
+                <h2 id="feedbackBin"></h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>Heksadesimaler</h1>
+                <p>Heksadesimaler, eller hex, er et tallsystem basert på 16. I dette systemet brukes sifrene 0-9 og
+                    bokstavene A-F for å representere verdier fra 0 til 15. Dette systemet er nyttig i databehandling
+                    fordi det gjør det enklere å lese og skrive store binære tall.
+
+                    Her er en sammenligning mellom det desimale (basert på 10), binære (basert på 2) og heksadesimale
+                    systemet: </p>
+
+                <ul>
+                    <li>Desimalt: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</li>
+                    <li>Binært: 0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111</li>
+                    <li>Hex: 0 1 2 3 4 5 6 7 8 9 A B C D E F</li>
+                </ul>
+
+                <p>For eksempel, det binære tallet 10101100 kan konverteres til heksadesimal ved å dele det inn i
+                    grupper på fire bits (1010 og 1100) og konvertere hver gruppe til en enkelt hex-verdi:</p>
+
+                <ul>
+                    <li>1010 (binært) = A (hex)</li>
+                    <li>1100 (binært) = C (hex)</li>
+                </ul>
+
+                <p>
+                    Heksadesimale tall brukes ofte i programmering og databehandling fordi de gir en mer kompakt og
+                    lesbar måte å representere binære verdier på. For eksempel, fargekoder i webdesign bruker
+                    heksadesimale verdier for å representere RGB-farger.</p>
+            </div>
+        </section>
+
+        <section class="variation">
+            <div class="container">
+                <h1>Test deg selv!</h1>
+                <h2>Skriv <span id="hex2">x</span><span id="hex1">x</span> som vanlig tall</h2>
+                <div>
+                    <input type="number" id="userAnswer">
+                </div>
+                <br>
+                <button id="checkHex">Sjekk svar</button>
+                <h2 id="feedbackHex"></h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h1>Et eksempel: RGB-farger</h1>
+                <p>RGB-farger (rød, grønn, blå) er et fargesystem brukt til å representere farger i digitale bilder og
+                    skjermer. Hver fargekomponent (rød, grønn, blå) kan ha en verdi fra 0 til 255, som bestemmer
+                    intensiteten av fargen. Hver RGB-komponent kan skrives som en byte (altså 8 bits) eller to
+                    heksadesimale sifre. Her er noen ulike farger skrevet med titallssystemet, heksadesimaler og binære
+                    tall: </p>
+                <br>
+                <div class="colors">
+                    <div class="color1">
+                        <p>Titall: 255 0 0</p>
+                        <p>Hex: FF 00 00</p>
+                        <p>Binært: 11111111 00000000 00000000</p>
+                    </div>
+                    <div class="color2">
+                        <p>Titall: 255 0 0</p>
+                        <p>Hex: 00 FF 00</p>
+                        <p>Binært: 00000000 11111111 00000000</p>
+                    </div>
+                    <div class="color3">
+                        <p>Titall: 255 0 0</p>
+                        <p>Hex: 00 00 FF</p>
+                        <p>Binært: 00000000 00000000 11111111</p>
+                    </div>
+                    <div class="color4">
+                        <p>Titall: 58 90 64</p>
+                        <p>Hex: 3A 5A 40</p>
+                        <p>Binært: 00111010 01011010 01000000</p>
+                    </div>
+                    <div class="color5">
+                        <p>Titall: 218 215 205</p>
+                        <p>Hex: DA D7 CD</p>
+                        <p>Binært: 11011010 11010111 11001101</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="grid">
+            <div>
+                <h2>Vår Digitale Verden</h2>
+            </div>
+            <div>
+                <h3>Kontakt oss</h3>
+                <ul>
+                    <li>johannesat@viken.no</li>
+                    <li>90593917</li>
+                    <li>Gjønnesjordet 30, 1357 Bekkestua</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="tallsystemer.js"></script>
+</body>
+
+</html>
